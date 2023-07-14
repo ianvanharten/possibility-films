@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #29af0f;
+  --light-green: #175b0a;
+  --grey: #d1d0d0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+nav {
+  background-color: var(--grey);
+  /* background-image: url(images/rock-background.jpg); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
+  margin: 20px;
+}
+
+nav h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--green);
+  text-shadow: black 3px 3px 3px;
+  line-height: 1.2;
+  font-size: 48px;
+}
+
+nav p {
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+  color: black;
+  line-height: 1.2;
+  font-size: 22px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 20px 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  padding: 20px;
+  background-color: var(--light-green);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+main h3 {
+  font-size: 28px;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post {
+  margin: 50px 75px;
+  width: 560px;
+}
+
+.post > * {
+  margin: 15px;
+}
+
+.post hr {
+  border: 2px solid white;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.post button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  font-size: 12px;
+  width: 70%;
+  margin: 25px auto;
+}

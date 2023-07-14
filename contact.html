@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Possibility Films</title>
+  </head>
+  <body>
+    <nav>
+      <img src="images/possibility-films-image.png" alt="Possibility Films Inc logo" />
+      <h1>
+        Possibility <br />
+        Films
+      </h1>
+      <p>
+        Stories That <br />
+        Move
+      </p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/films.html">Films</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Contact</h2>
+
+      <div class="posts">
+        <div class="post"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>possibilityfilms@gmail.com</p>
+      <p>519-212-2813</p>
+      <p><a href="https://www.imdb.com/name/nm3339092/?ref_=tt_ov_dr" target="_blank">IMDb</a></p>
+      <br />
+      <p>Copyright © <span class="year"></span> Possibility Films</p>
+    </footer>
+
+    <script>
+      document.querySelector('.year').innerHTML = new Date().getFullYear()
+    </script>
+  </body>
+</html>
