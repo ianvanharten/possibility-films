@@ -8,13 +8,20 @@
 
 :root {
   --green: #29af0f;
-  --light-green: #175b0a;
+  --dark-green: #175b0a;
   --grey: #d1d0d0;
+  --dark-grey: #272727;
+  --off-white: #f1f1f1;
 }
 
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--off-white);
 }
 
 nav {
@@ -54,6 +61,7 @@ nav p {
 nav ul {
   list-style-type: none;
   display: flex;
+  border-top: 5px solid var(--dark-grey);
 }
 
 nav ul li {
@@ -68,9 +76,11 @@ nav ul li a {
 }
 
 main {
-  padding: 20px;
-  background-color: var(--light-green);
-  color: white;
+  padding: 40px 20px;
+  border-top: 10px solid var(--dark-green);
+  border-bottom: 10px solid var(--dark-green);
+  background-color: var(--dark-grey);
+  color: var(--off-white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,12 +106,15 @@ main h3 {
   width: 560px;
 }
 
-.post > * {
+.post > *,
+.about > *,
+.bio > *,
+.contact > * {
   margin: 15px;
 }
 
 .post hr {
-  border: 2px solid white;
+  border: 2px solid var(--dark-green);
   width: 70%;
   margin: 0 auto;
 }
@@ -114,8 +127,60 @@ main h3 {
   cursor: pointer;
 }
 
+hr {
+  border: 1px solid var(--dark-green);
+  width: 70%;
+  margin: 50px auto;
+}
+
+.bio,
+.about,
+.contact {
+  width: 60%;
+}
+
+.bio img {
+  display: block;
+  margin: 0 auto;
+}
+
+.bio h3 {
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact h2 {
+  text-align: left;
+}
+
+.contact img {
+  width: 426px;
+  height: 178px;
+}
+
+.contact-method {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+
+.contact-method img {
+  width: 30px;
+  height: auto;
+  margin-right: 25px;
+}
+
 footer {
   font-size: 12px;
   width: 70%;
   margin: 25px auto;
+}
+
+footer a {
+  color: black;
 }
