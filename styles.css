@@ -177,8 +177,14 @@ hr {
 
 footer {
   font-size: 12px;
+  background-color: var(--grey);
+  width: 100%;
+}
+
+footer div {
   width: 70%;
-  margin: 25px auto;
+  margin: 0 auto;
+  padding: 25px;
 }
 
 footer a {
