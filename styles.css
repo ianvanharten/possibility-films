@@ -10,6 +10,7 @@
   --green: #29af0f;
   --dark-green: #175b0a;
   --grey: #d1d0d0;
+  --medium-grey: #9e9e9e;
   --dark-grey: #272727;
   --off-white: #f1f1f1;
 }
@@ -34,7 +35,7 @@ nav {
 }
 
 nav img {
-  width: 100px;
+  width: 90px;
   height: auto;
   margin: 20px;
 }
@@ -65,14 +66,26 @@ nav ul {
 }
 
 nav ul li {
-  margin: 20px 40px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 nav ul li a {
+  padding: 20px 40px;
   text-decoration: none;
   color: black;
+  display: block;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: var(--medium-grey);
+  text-decoration: underline solid var(--dark-green) 2px;
+}
+
+.selected {
+  font-weight: bold;
+  color: var(--dark-green);
 }
 
 main {
@@ -102,7 +115,7 @@ main h3 {
 }
 
 .post {
-  margin: 50px 75px;
+  margin: 0 75px 50px 75px;
   width: 560px;
 }
 
@@ -141,6 +154,8 @@ hr {
 
 .bio img {
   display: block;
+  width: 150px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -173,6 +188,27 @@ hr {
   width: 30px;
   height: auto;
   margin-right: 25px;
+}
+
+.films {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.film {
+  width: 560px;
+  margin: 25px;
+}
+
+.other-projects {
+  margin: 50px 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.other-projects a:hover {
+  color: var(--green);
 }
 
 footer {
