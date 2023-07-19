@@ -108,6 +108,22 @@ main h3 {
   font-size: 28px;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .posts {
   display: flex;
   flex-wrap: wrap;
@@ -116,7 +132,7 @@ main h3 {
 
 .post {
   margin: 0 75px 50px 75px;
-  width: 560px;
+  max-width: 1000px;
 }
 
 .post > *,
@@ -241,13 +257,13 @@ footer a {
 
 @media (max-width: 700px) {
   nav img {
-    width: 60px;
+    width: 70px;
     height: auto;
-    margin: 10px;
+    margin: 20px 10px;
   }
 
   nav h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   nav p {
@@ -272,5 +288,13 @@ footer a {
   nav ul li a:hover {
     background-color: var(--medium-grey);
     text-decoration: underline solid var(--dark-green) 2px;
+  }
+
+  hr {
+    margin: 25px auto;
+  }
+
+  .post {
+    margin: 0 25px 50px 25px;
   }
 }
