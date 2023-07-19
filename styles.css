@@ -203,12 +203,24 @@ hr {
 
 .other-projects {
   margin: 50px 25px;
+  width: 80%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.other-projects ul {
+  max-width: 60%;
 }
 
 .other-projects a:hover {
   color: var(--green);
+}
+
+.other-projects img {
+  width: 400px;
+  height: auto;
 }
 
 footer {
@@ -225,4 +237,40 @@ footer div {
 
 footer a {
   color: black;
+}
+
+@media (max-width: 700px) {
+  nav img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+  }
+
+  nav h1 {
+    font-size: 40px;
+  }
+
+  nav p {
+    font-size: 18px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    border-top: 5px solid var(--dark-grey);
+  }
+
+  nav ul li {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  nav ul li a {
+    padding: 10px 20px;
+  }
+
+  nav ul li a:hover {
+    background-color: var(--medium-grey);
+    text-decoration: underline solid var(--dark-green) 2px;
+  }
 }
