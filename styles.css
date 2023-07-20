@@ -62,7 +62,7 @@ nav p {
 nav ul {
   list-style-type: none;
   display: flex;
-  border-top: 5px solid var(--dark-grey);
+  border-top: 4px solid var(--dark-grey);
 }
 
 nav ul li {
@@ -108,6 +108,13 @@ main h3 {
   font-size: 28px;
 }
 
+hr {
+  border: 1px solid var(--dark-green);
+  width: 70%;
+  margin: 50px auto;
+}
+
+/* Source - https://www.avexdesigns.com/blog/responsive-youtube-embed/ */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -124,22 +131,22 @@ main h3 {
   height: 100%;
 }
 
-.posts {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.post {
-  margin: 0 75px 50px 75px;
-  max-width: 1000px;
-}
-
 .post > *,
 .about > *,
 .bio > *,
 .contact > * {
   margin: 15px;
+}
+
+.bio,
+.about,
+.contact {
+  width: 60%;
+}
+
+.post {
+  margin: 0 75px 50px 75px;
+  max-width: 1000px;
 }
 
 .post hr {
@@ -154,18 +161,6 @@ main h3 {
   padding: 10px;
   font-size: 16px;
   cursor: pointer;
-}
-
-hr {
-  border: 1px solid var(--dark-green);
-  width: 70%;
-  margin: 50px auto;
-}
-
-.bio,
-.about,
-.contact {
-  width: 60%;
 }
 
 .bio img {
@@ -183,6 +178,7 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact h2 {
@@ -190,8 +186,9 @@ hr {
 }
 
 .contact img {
-  width: 426px;
-  height: 178px;
+  max-width: 426px;
+  width: 100%;
+  height: auto;
 }
 
 .contact-method {
@@ -213,16 +210,16 @@ hr {
 }
 
 .film {
-  width: 560px;
+  max-width: 600px;
   margin: 25px;
 }
 
 .other-projects {
-  margin: 50px 25px;
+  margin: 50px 25px 25px 25px;
   width: 80%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -235,7 +232,9 @@ hr {
 }
 
 .other-projects img {
-  width: 400px;
+  margin-top: 40px;
+  max-width: 400px;
+  width: 100%;
   height: auto;
 }
 
@@ -253,6 +252,23 @@ footer div {
 
 footer a {
   color: black;
+}
+
+@media (max-width: 1300px) {
+  .contact {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bio,
+  .about {
+    width: 90%;
+  }
+
+  .other-projects ul {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 700px) {
